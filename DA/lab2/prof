@@ -1,0 +1,304 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00     8081     0.00     0.00  TString::Size()
+  0.00      0.00     0.00     7683     0.00     0.00  TString::operator[](int)
+  0.00      0.00     0.00     5526     0.00     0.00  TPatricia::GetBit(int, int, TString&)
+  0.00      0.00     0.00     1600     0.00     0.00  TString::clear()
+  0.00      0.00     0.00      804     0.00     0.00  operator>>(std::istream&, TString&)
+  0.00      0.00     0.00      803     0.00     0.00  TString::Updatelength()
+  0.00      0.00     0.00      801     0.00     0.00  TString::~TString()
+  0.00      0.00     0.00      799     0.00     0.00  TString::TString()
+  0.00      0.00     0.00      799     0.00     0.00  TString::operator=(TString const&)
+  0.00      0.00     0.00      799     0.00     0.00  TPatricia::TNode::TNode()
+  0.00      0.00     0.00      799     0.00     0.00  TPatricia::TNode::~TNode()
+  0.00      0.00     0.00      401     0.00     0.00  TString::cstr()
+  0.00      0.00     0.00      400     0.00     0.00  TString::ToLower()
+  0.00      0.00     0.00      400     0.00     0.00  TPatricia::AddNode(TString&, unsigned long long)
+  0.00      0.00     0.00      399     0.00     0.00  TPatricia::InsertNode(TPatricia::TNode&, TPatricia::TNode&)
+  0.00      0.00     0.00      399     0.00     0.00  TPatricia::FindBitDifference(TPatricia::TNode&, TPatricia::TNode&)
+  0.00      0.00     0.00      399     0.00     0.00  TPatricia::TNode::operator=(TPatricia::TNode const&)
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZlsRSoRK7TString
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  TString::TString(TString const&)
+  0.00      0.00     0.00        1     0.00     0.00  TString::TString(int)
+  0.00      0.00     0.00        1     0.00     0.00  TPatricia::RemoveTree(TPatricia::TNode*)
+  0.00      0.00     0.00        1     0.00     0.00  TPatricia::SaveInFile(TString)
+  0.00      0.00     0.00        1     0.00     0.00  TPatricia::Clear()
+  0.00      0.00     0.00        1     0.00     0.00  TPatricia::SaveTree(TPatricia::TNode*, _IO_FILE*)
+  0.00      0.00     0.00        1     0.00     0.00  TPatricia::TPatricia()
+  0.00      0.00     0.00        1     0.00     0.00  TPatricia::~TPatricia()
+  0.00      0.00     0.00        1     0.00     0.00  TString::operator==(char const*) const
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00     400/8081        TPatricia::SaveTree(TPatricia::TNode*, _IO_FILE*) [32]
+                0.00    0.00    3164/8081        TPatricia::InsertNode(TPatricia::TNode&, TPatricia::TNode&) [22]
+                0.00    0.00    4517/8081        TPatricia::FindBitDifference(TPatricia::TNode&, TPatricia::TNode&) [23]
+[8]      0.0    0.00    0.00    8081         TString::Size() [8]
+-----------------------------------------------
+                0.00    0.00     401/7683        main [6]
+                0.00    0.00    1756/7683        TPatricia::FindBitDifference(TPatricia::TNode&, TPatricia::TNode&) [23]
+                0.00    0.00    5526/7683        TPatricia::GetBit(int, int, TString&) [10]
+[9]      0.0    0.00    0.00    7683         TString::operator[](int) [9]
+-----------------------------------------------
+                0.00    0.00    2362/5526        TPatricia::FindBitDifference(TPatricia::TNode&, TPatricia::TNode&) [23]
+                0.00    0.00    3164/5526        TPatricia::InsertNode(TPatricia::TNode&, TPatricia::TNode&) [22]
+[10]     0.0    0.00    0.00    5526         TPatricia::GetBit(int, int, TString&) [10]
+                0.00    0.00    5526/7683        TString::operator[](int) [9]
+-----------------------------------------------
+                0.00    0.00     799/1600        TPatricia::TNode::~TNode() [18]
+                0.00    0.00     801/1600        TString::~TString() [14]
+[11]     0.0    0.00    0.00    1600         TString::clear() [11]
+-----------------------------------------------
+                0.00    0.00     804/804         main [6]
+[12]     0.0    0.00    0.00     804         operator>>(std::istream&, TString&) [12]
+                0.00    0.00     803/803         TString::Updatelength() [13]
+-----------------------------------------------
+                0.00    0.00     803/803         operator>>(std::istream&, TString&) [12]
+[13]     0.0    0.00    0.00     803         TString::Updatelength() [13]
+-----------------------------------------------
+                0.00    0.00       2/801         main [6]
+                0.00    0.00     799/801         TPatricia::TNode::~TNode() [18]
+[14]     0.0    0.00    0.00     801         TString::~TString() [14]
+                0.00    0.00     801/1600        TString::clear() [11]
+-----------------------------------------------
+                0.00    0.00     799/799         TPatricia::TNode::TNode() [17]
+[15]     0.0    0.00    0.00     799         TString::TString() [15]
+-----------------------------------------------
+                0.00    0.00     399/799         TPatricia::TNode::operator=(TPatricia::TNode const&) [24]
+                0.00    0.00     400/799         TPatricia::AddNode(TString&, unsigned long long) [21]
+[16]     0.0    0.00    0.00     799         TString::operator=(TString const&) [16]
+-----------------------------------------------
+                0.00    0.00     399/799         TPatricia::InsertNode(TPatricia::TNode&, TPatricia::TNode&) [22]
+                0.00    0.00     400/799         TPatricia::AddNode(TString&, unsigned long long) [21]
+[17]     0.0    0.00    0.00     799         TPatricia::TNode::TNode() [17]
+                0.00    0.00     799/799         TString::TString() [15]
+-----------------------------------------------
+                0.00    0.00     399/799         TPatricia::AddNode(TString&, unsigned long long) [21]
+                0.00    0.00     400/799         TPatricia::RemoveTree(TPatricia::TNode*) [29]
+[18]     0.0    0.00    0.00     799         TPatricia::TNode::~TNode() [18]
+                0.00    0.00     799/1600        TString::clear() [11]
+                0.00    0.00     799/801         TString::~TString() [14]
+-----------------------------------------------
+                0.00    0.00       1/401         TPatricia::SaveInFile(TString) [30]
+                0.00    0.00     400/401         TPatricia::SaveTree(TPatricia::TNode*, _IO_FILE*) [32]
+[19]     0.0    0.00    0.00     401         TString::cstr() [19]
+-----------------------------------------------
+                0.00    0.00     400/400         main [6]
+[20]     0.0    0.00    0.00     400         TString::ToLower() [20]
+-----------------------------------------------
+                0.00    0.00     400/400         main [6]
+[21]     0.0    0.00    0.00     400         TPatricia::AddNode(TString&, unsigned long long) [21]
+                0.00    0.00     400/799         TPatricia::TNode::TNode() [17]
+                0.00    0.00     400/799         TString::operator=(TString const&) [16]
+                0.00    0.00     399/399         TPatricia::InsertNode(TPatricia::TNode&, TPatricia::TNode&) [22]
+                0.00    0.00     399/799         TPatricia::TNode::~TNode() [18]
+-----------------------------------------------
+                                3164             TPatricia::InsertNode(TPatricia::TNode&, TPatricia::TNode&) [22]
+                0.00    0.00     399/399         TPatricia::AddNode(TString&, unsigned long long) [21]
+[22]     0.0    0.00    0.00     399+3164    TPatricia::InsertNode(TPatricia::TNode&, TPatricia::TNode&) [22]
+                0.00    0.00    3164/8081        TString::Size() [8]
+                0.00    0.00    3164/5526        TPatricia::GetBit(int, int, TString&) [10]
+                0.00    0.00     399/399         TPatricia::FindBitDifference(TPatricia::TNode&, TPatricia::TNode&) [23]
+                0.00    0.00     399/799         TPatricia::TNode::TNode() [17]
+                0.00    0.00     399/399         TPatricia::TNode::operator=(TPatricia::TNode const&) [24]
+                                3164             TPatricia::InsertNode(TPatricia::TNode&, TPatricia::TNode&) [22]
+-----------------------------------------------
+                0.00    0.00     399/399         TPatricia::InsertNode(TPatricia::TNode&, TPatricia::TNode&) [22]
+[23]     0.0    0.00    0.00     399         TPatricia::FindBitDifference(TPatricia::TNode&, TPatricia::TNode&) [23]
+                0.00    0.00    4517/8081        TString::Size() [8]
+                0.00    0.00    2362/5526        TPatricia::GetBit(int, int, TString&) [10]
+                0.00    0.00    1756/7683        TString::operator[](int) [9]
+-----------------------------------------------
+                0.00    0.00     399/399         TPatricia::InsertNode(TPatricia::TNode&, TPatricia::TNode&) [22]
+[24]     0.0    0.00    0.00     399         TPatricia::TNode::operator=(TPatricia::TNode const&) [24]
+                0.00    0.00     399/799         TString::operator=(TString const&) [16]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [50]
+[25]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZlsRSoRK7TString [25]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [26]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZlsRSoRK7TString [25]
+[26]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [26]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[27]     0.0    0.00    0.00       1         TString::TString(TString const&) [27]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[28]     0.0    0.00    0.00       1         TString::TString(int) [28]
+-----------------------------------------------
+                                 399             TPatricia::RemoveTree(TPatricia::TNode*) [29]
+                0.00    0.00       1/1           TPatricia::Clear() [31]
+[29]     0.0    0.00    0.00       1+399     TPatricia::RemoveTree(TPatricia::TNode*) [29]
+                0.00    0.00     400/799         TPatricia::TNode::~TNode() [18]
+                                 399             TPatricia::RemoveTree(TPatricia::TNode*) [29]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[30]     0.0    0.00    0.00       1         TPatricia::SaveInFile(TString) [30]
+                0.00    0.00       1/401         TString::cstr() [19]
+                0.00    0.00       1/1           TPatricia::SaveTree(TPatricia::TNode*, _IO_FILE*) [32]
+-----------------------------------------------
+                0.00    0.00       1/1           TPatricia::~TPatricia() [34]
+[31]     0.0    0.00    0.00       1         TPatricia::Clear() [31]
+                0.00    0.00       1/1           TPatricia::RemoveTree(TPatricia::TNode*) [29]
+-----------------------------------------------
+                                 399             TPatricia::SaveTree(TPatricia::TNode*, _IO_FILE*) [32]
+                0.00    0.00       1/1           TPatricia::SaveInFile(TString) [30]
+[32]     0.0    0.00    0.00       1+399     TPatricia::SaveTree(TPatricia::TNode*, _IO_FILE*) [32]
+                0.00    0.00     400/8081        TString::Size() [8]
+                0.00    0.00     400/401         TString::cstr() [19]
+                                 399             TPatricia::SaveTree(TPatricia::TNode*, _IO_FILE*) [32]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[33]     0.0    0.00    0.00       1         TPatricia::TPatricia() [33]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[34]     0.0    0.00    0.00       1         TPatricia::~TPatricia() [34]
+                0.00    0.00       1/1           TPatricia::Clear() [31]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[35]     0.0    0.00    0.00       1         TString::operator==(char const*) const [35]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [25] _GLOBAL__sub_I__ZlsRSoRK7TString [14] TString::~TString() [24] TPatricia::TNode::operator=(TPatricia::TNode const&)
+  [26] __static_initialization_and_destruction_0(int, int) [16] TString::operator=(TString const&) [10] TPatricia::GetBit(int, int, TString&)
+  [13] TString::Updatelength() [9] TString::operator[](int) [21] TPatricia::AddNode(TString&, unsigned long long)
+   [8] TString::Size()        [22] TPatricia::InsertNode(TPatricia::TNode&, TPatricia::TNode&) [32] TPatricia::SaveTree(TPatricia::TNode*, _IO_FILE*)
+  [19] TString::cstr()        [29] TPatricia::RemoveTree(TPatricia::TNode*) [33] TPatricia::TPatricia()
+  [11] TString::clear()       [30] TPatricia::SaveInFile(TString) [34] TPatricia::~TPatricia()
+  [20] TString::ToLower()     [23] TPatricia::FindBitDifference(TPatricia::TNode&, TPatricia::TNode&) [35] TString::operator==(char const*) const
+  [27] TString::TString(TString const&) [31] TPatricia::Clear() [12] operator>>(std::istream&, TString&)
+  [15] TString::TString()     [17] TPatricia::TNode::TNode()
+  [28] TString::TString(int)  [18] TPatricia::TNode::~TNode()

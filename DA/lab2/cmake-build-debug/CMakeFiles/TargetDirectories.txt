@@ -1,0 +1,3 @@
+/mnt/d/X-Files/MAI/3 sem/DA/lab2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/d/X-Files/MAI/3 sem/DA/lab2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/X-Files/MAI/3 sem/DA/lab2/cmake-build-debug/CMakeFiles/lab2.dir

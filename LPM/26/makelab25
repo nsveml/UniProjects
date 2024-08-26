@@ -1,0 +1,15 @@
+#makefile lab25
+CC = gcc
+LD = gcc
+CCFLAGS = -Wall -pedantic -std=c11
+LDFLAGS =
+lab26: lab26.o deq.o sort.o
+	$(LD) $(LDFLAGS) -o lab26 lab26.o deq.o sort.o
+lab26.o: lab26.c deq.h
+	$(CC) $(CCFLAGS) -c lab26.c
+deq.o: deq.c deq.h
+	$(CC) $(CCFLAGS) -c deq.c
+sort.o: sort.c deq.h deq.c
+	$(CC) $(CCFLAGS) -c sort.c
+clean:
+	rm -f *.o
